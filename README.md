@@ -1,5 +1,7 @@
 # typeracer-cheat
 A program that allows one to achieve extremely high speeds on typeracer.com. This works only for the online races and the practice races - not for the race your friend mode.
+### How it looks:
+![](https://user-images.githubusercontent.com/59426357/114341733-4dfa5c00-9b0f-11eb-9ae9-9a4145a42e46.gif)
 ### How to setup:
 * First, make sure you have Selenium installed
   - To install Selenium, go to your command line and run `pip install selenium`
