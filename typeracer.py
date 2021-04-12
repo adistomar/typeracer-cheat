@@ -30,4 +30,3 @@ try:
 
 except:
     print("game was not started in time")
-    driver.quit()
