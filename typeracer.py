@@ -29,4 +29,4 @@ try:
         time.sleep(.01)  # 1 char every 0.01 seconds
 
 except:
-    print("game was not started in time")
+    print("error")
