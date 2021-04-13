@@ -18,6 +18,6 @@ A program that allows one to achieve extremely high speeds on typeracer.com on a
 ### Changing typing speed
 * to change the typing speed, locate this line in `typeracer.py`:
 ```python
-time.sleep(.01)
+time.sleep(.009)
 ```
-* change the value inside the parentheses - `.01` means that the typing speed is 1 character every .01 seconds, or 1 character every one-hundredth of a second
+* change the value inside the parentheses - `.009` means that the typing speed is 1 character every .009 seconds, or 1 character every 9-thousandth of a second
