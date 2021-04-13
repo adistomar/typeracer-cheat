@@ -75,11 +75,12 @@ def game():
 
         for i in text:
             text_box.send_keys(i)
-            time.sleep(.01)  # 1 char every 0.01 seconds
+            time.sleep(.009)  # 1 char every 0.009 seconds
 
     except:
-        print("game error")
+        pass
 
 
 login()
-game()
+while True:
+    game()
