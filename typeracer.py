@@ -36,16 +36,39 @@ def login():
             print("login error")
 
 
+def friend_mode_check(text):
+    for _ in text:
+        if 'join' in _.lower():
+            return True
+
+
+def friend_mode_handler(main, text):
+    if friend_mode_check(text):
+        race_status = main.find_element_by_class_name("gameStatusLabel").text
+        while 'waiting' not in race_status.lower() and 'about to start' not in race_status.lower():
+            race_status = main.find_element_by_class_name("gameStatusLabel").text
+        main = driver.find_element_by_class_name("gameView")
+        text = main.text
+        text = text.split("\n")
+    else:
+        pass
+    return text
+
+
 def game():
     try:
-        main = WebDriverWait(driver, 1000).until(EC.presence_of_element_located((By.CLASS_NAME, "gameView")))
+        main = WebDriverWait(driver, 60).until(EC.presence_of_element_located((By.CLASS_NAME, "gameView")))
 
         text = main.text
-        text = text.split("\n")[-3]  # getting the actual text content
+        text = text.split("\n")
+
+        text = friend_mode_handler(main, text)
+
+        text = text[-3]  # getting the actual text content from list
 
         race_status = main.find_element_by_class_name("gameStatusLabel").text
 
-        while "Go" not in race_status and "The race is on" not in race_status:
+        while "go" not in race_status.lower() and "the race is on" not in race_status.lower():
             race_status = main.find_element_by_class_name("gameStatusLabel").text
 
         text_box = main.find_element_by_class_name("txtInput")
