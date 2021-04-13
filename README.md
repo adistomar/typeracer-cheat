@@ -8,10 +8,13 @@ A program that allows one to achieve extremely high speeds on typeracer.com. Thi
 * Then, make sure to have Chromedriver installed
   - To install Chromedriver, follow this [video](https://youtu.be/Xjv1sY630Uc?t=259)
 * Locate and copy the path to the location where you downloaded Chromedriver
-* Open the `typeracer.py` file and replace the path in the string: `PATH = "YOUR_PATH_TO_CHROMEDRIVER"`
+* Open the `typeracer.py` file and put the path inside the double quotes: `PATH = ""`
 ### How to run:
-* either run it direclty from your IDE
-* or open command line and run `python3 typeracer.py` or `python typeracer.py` depending on your OS and python version
+* If you have a typeracer account, enter your username and password inside the double quotes in `typeracer.py`
+  - `username = ""`
+  - `password = ""`
+* Either run it directly from your IDE
+* Or open command line and run `python3 typeracer.py` or `python typeracer.py` depending on your OS and python version
 ### Changing typing speed
 * to change the typing speed, locate this line in `typeracer.py`:
 ```python
