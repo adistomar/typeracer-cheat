@@ -1,5 +1,5 @@
 # typeracer-cheat
-A program that allows one to achieve extremely high speeds on typeracer.com. This works only for the online races and the practice races - not for the race your friend mode.
+A program that allows one to achieve extremely high speeds on typeracer.com on all game modes.
 ### How it looks:
 ![](https://user-images.githubusercontent.com/59426357/114341733-4dfa5c00-9b0f-11eb-9ae9-9a4145a42e46.gif)
 ### How to setup:
@@ -21,4 +21,3 @@ A program that allows one to achieve extremely high speeds on typeracer.com. Thi
 time.sleep(.01)
 ```
 * change the value inside the parentheses - `.01` means that the typing speed is 1 character every .01 seconds, or 1 character every one-hundredth of a second
-#### Note that this program only works for the online races and the practice races - it doesn't work for the race your friends mode.
