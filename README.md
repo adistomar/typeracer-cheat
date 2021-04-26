@@ -3,10 +3,10 @@ A program that allows one to achieve extremely high speeds on typeracer.com on a
 ### How it looks:
 ![](https://user-images.githubusercontent.com/59426357/114341733-4dfa5c00-9b0f-11eb-9ae9-9a4145a42e46.gif)
 ### How to setup:
-* First, make sure you have Selenium installed
-  - To install Selenium, go to your command line and run `pip install selenium`
-* Then, make sure to have Chromedriver installed
-  - To install Chromedriver, follow this [video](https://youtu.be/Xjv1sY630Uc?t=259)
+* First, install Selenium by going to your command line and running `pip install selenium`
+* Then, install Chromedriver by visiting the [installation page](https://chromedriver.chromium.org/downloads)
+  - To know what version of Chrome you have, click on the three dots at the top right of Chrome
+  - Hover over `Help` and click on `About Google Chrome` to see your Chrome version
 * Locate and copy the path to the location where you downloaded Chromedriver
 * Open the `typeracer.py` file and put the path inside the double quotes: `PATH = ""`
 ### How to run:
