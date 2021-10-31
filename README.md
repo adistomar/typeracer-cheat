@@ -8,7 +8,7 @@ A program that allows one to achieve extremely high speeds on typeracer.com on a
 ### How to run:
 * Open terminal
 * Locate the folder where you downloaded the program: `cd <folder>/typeracer-cheat/` where folder is Downloads, Documents, etc.
-* Run `python3 typeracer.py`
+* Run `python typeracer.py`
 ### Changing typing speed
 * To change the typing speed, locate this line in `typeracer.py`:
 ```python
