@@ -3,12 +3,13 @@ A program that allows one to achieve extremely high speeds on typeracer.com on a
 ### How it looks:
 ![](https://user-images.githubusercontent.com/59426357/114341733-4dfa5c00-9b0f-11eb-9ae9-9a4145a42e46.gif)
 ### How to setup:
+* Click on the `Releases` button, find the release that matches your OS, and download the zip file
 * Install Selenium by going to terminal and running `pip3 install selenium`
 * Install Tkinter by running `pip3 install tk`
 ### How to run:
 * Open terminal
-* Locate the folder where you downloaded the program: `cd <folder>/typeracer-cheat/` where folder is Downloads, Documents, etc.
-* Run `python3 typeracer.py`
+* Locate the folder where you downloaded the program: `cd <folder>/typeracer-cheat...` where folder is Downloads, Documents, etc.
+* Run `python3 typeracer.py` on MacOS or `python typeracer.py` on Windows
 ### Changing typing speed
 * To change the typing speed, locate this line in `typeracer.py`:
 ```python
