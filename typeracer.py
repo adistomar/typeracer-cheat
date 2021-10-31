@@ -6,7 +6,6 @@ import time
 from tkinter import *
 from tkinter.ttk import *
 import sys
-import os
 
 root = Tk()
 
@@ -19,7 +18,7 @@ Label(root, image=logo1).grid(row=0, column=2, columnspan=2, rowspan=2, padx=5, 
 
 username = ""
 password = ""
-PATH = "./chromedriver"
+PATH = "./chromedriver.exe"
 driver = None
 started = False
 
@@ -42,7 +41,6 @@ def get(event):
     global driver
     username = str(event.widget.get())
     password = str(event.widget.get())
-    os.chmod('./chromedriver', 0o755)
     driver = webdriver.Chrome(PATH)
     driver.get("https://play.typeracer.com/")
     login()
