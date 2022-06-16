@@ -13,11 +13,7 @@ import chromedriver_autoinstall
 root = Tk()
 
 root.title("TypeRacer Cheat")
-root.iconbitmap("typeracer_cheat/logo.png")
-
-logo = PhotoImage(file="typeracer_cheat/logo.png")
-logo1 = logo.subsample(2, 2)
-Label(root, image=logo1).grid(row=0, column=2, columnspan=2, rowspan=2, padx=5, pady=5)
+Label(root).grid(row=0, column=2, columnspan=2, rowspan=2, padx=5, pady=5)
 
 username = ""
 password = ""
