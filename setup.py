@@ -8,7 +8,7 @@ with open('README.md') as readme_file:
 
 setup(
    name="typeracer_cheat",
-   version="0.0.1",
+   version="0.0.2",
    author="RoastSea8 (Aditya Tomar)",
    author_email="aditya26042005@gmail.com",
    description="A program that allows one to achieve extremely high speeds on typeracer.com on all game modes.",
