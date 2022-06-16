@@ -2,7 +2,7 @@
 A program that allows one to achieve extremely high speeds on typeracer.com on all game modes.
 
 ## Demo:
-
+https://user-images.githubusercontent.com/59426357/174093466-ce797f7b-86ba-4228-a056-cb46d174a1b9.mp4
 
 ## Install:
 #### Python 3.6 or higher is required
