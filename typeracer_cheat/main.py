@@ -13,15 +13,17 @@ import chromedriver_autoinstall
 root = Tk()
 
 root.title("TypeRacer Cheat")
-root.iconbitmap("logo.png")
+root.iconbitmap("typeracer_cheat/logo.png")
 
-logo = PhotoImage(file="logo.png")
+logo = PhotoImage(file="typeracer_cheat/logo.png")
 logo1 = logo.subsample(2, 2)
 Label(root, image=logo1).grid(row=0, column=2, columnspan=2, rowspan=2, padx=5, pady=5)
 
 username = ""
 password = ""
 chromedriver_autoinstall.install()
+if chromedriver_autoinstall.get_platform() == "mac":
+   os.chmod('./chromedriver', 0o755)
 PATH = "./chromedriver"
 driver = None
 started = False
@@ -45,8 +47,6 @@ def get(event):
    global driver
    username = str(event.widget.get())
    password = str(event.widget.get())
-   if chromedriver_autoinstall.get_platform() == "mac":
-      os.chmod('./chromedriver', 0o755)
    driver = webdriver.Chrome(PATH)
    driver.get("https://play.typeracer.com/")
    login()
@@ -173,5 +173,3 @@ def main():
          pass
       if isDriverClosed():
          exit()
-
-main()

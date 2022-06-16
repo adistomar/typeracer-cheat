@@ -1,0 +1,1 @@
+from typeracer_cheat import main
