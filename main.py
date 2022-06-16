@@ -21,6 +21,7 @@ Label(root, image=logo1).grid(row=0, column=2, columnspan=2, rowspan=2, padx=5, 
 
 username = ""
 password = ""
+chromedriver_autoinstall.install()
 PATH = "./chromedriver"
 driver = None
 started = False
@@ -44,7 +45,6 @@ def get(event):
    global driver
    username = str(event.widget.get())
    password = str(event.widget.get())
-   chromedriver_autoinstall.install()
    if chromedriver_autoinstall.get_platform() == "mac":
       os.chmod('./chromedriver', 0o755)
    driver = webdriver.Chrome(PATH)
@@ -173,3 +173,5 @@ def main():
          pass
       if isDriverClosed():
          exit()
+
+main()
